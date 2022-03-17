@@ -1,0 +1,30 @@
+<html>
+
+<script src="https://dev-axicorp.cs126.force.com/lightning/lightning.out.js"></script>
+<div id="location-cpp"></div>
+
+<script>
+	const appName = "c:ClientPortalCasesApp";
+	const componentName = "c:clientPortalCases";
+	const lightningEndpoint = "https://dev-axicorp.cs126.force.com";
+	const componentAttributes = {
+		clientCRN : "12345"
+	}
+
+	$Lightning.use(
+		appName, 
+		function() {
+			$Lightning.createComponent(
+				componentName,
+				componentAttributes,
+				"location-cpp",
+				function(cmp) {
+					console.log("LWC component was created");
+				}
+			);
+		},
+		lightningEndpoint
+	);
+</script>
+
+</html>
