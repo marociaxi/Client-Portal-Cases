@@ -14,13 +14,13 @@
      <div id="location-cpp"></div>
       <%- include('partials/footer.ejs') %>
     </main>
-    <script src="<%=sfsite%>/lightning/lightning.out.js"></script>
+    <script src="https://dev-axicorp.cs126.force.com/lightning/lightning.out.js"></script>
   <script>
         const appName = "c:ClientPortalCasesApp";
         const componentName = "c:clientPortalCases";
-        const lightningEndpoint = "<%=sfsite%>"; // Replace the value with the community URL of the org that hosts the lwc app
+        const lightningEndpoint = "https://dev-axicorp.cs126.force.com"; // Replace the value with the community URL of the org that hosts the lwc app
         const componentAttributes = {
-            clientCRN : "0788605" // Replace the value with a dynamic variable that should contain the Customer Number
+            clientCRN : "0783902" // Replace the value with a dynamic variable that should contain the Customer Number
         }
         $Lightning.use(
             appName, 
